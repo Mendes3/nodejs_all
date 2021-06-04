@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand&display=swap" rel="stylesheet">
+<style type="text/css">
+	:root{
+		--title-font:'Lobster', cursive;;
+		--primary-font:'Quicksand', cursive;
+		}
+	body{
+		background-image: url('bg.jpeg');
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center;
+		/*display:inline-block;*/
+		background-size: 100% 100vh;
+		margin:0;
+		opacity: 0.8;
+		background-position: flex-end;
+		font-style: var(--primary-font);
+
+	}
+	nav{
+		position:fixed;
+		display:flex;
+		width:100%;
+		height:8vh;
+		align-items:center;
+		box-sizing: border-box;
+		justify-content:space-between;
+        padding:0 5vw;
+        box-sizing:border-box;
+        background-color:#261520;
+        
+	}
+	.nav-items{
+		justify-content:space-between;
+		width:20%;
+		display:flex;
+		color:white;
+	}
+	section.welcome{
+		height:90vh;
+		width:100%;
+		/*display:flex;*/
+		justify-content: space-between;
+		
+	}
+	.title{
+		margin:auto;
+		font-size: 50px;
+		text-align: center;
+		padding: 1vw 0;
+	}
+	form{
+		margin:auto;
+		display:inline-block;
+		padding:20px;
+		text-align:left;
+		border: 1px solid;
+		border-radius: 20px;
+		width:60%;
+
+	}
+	.form{
+		display:block;
+		text-align:center;
+		
+		
+	}
+	.form-items{
+		margin-bottom:15px;
+	}
+	.form-item{
+		padding:4px;
+		width:40%;
+		box-shadow:1px;
+		border: 1px solid;
+		border-radius:5px;
+	}
+</style>
+<body>
+	<nav>
+		<div class="logo">logo</div>
+		<div class='nav-items'>
+			<div class='nav-item'>Home</div>
+			<div class='nav-item'>About us</div>
+		</div>
+	</nav>
+	<main>
+		<section class='welcome'>
+			<div></div>
+			<div class='title'>
+				<h4>COVID-19 Survey Form</h4>
+			</div>
+			<div>
+				<form class='form'>
+					<div class='form-items'>
+						Name:
+						<input class="form-item" type="text" placeholder="Enter your name"  name="name" required >
+					</div>
+					<div class='form-items'>
+						<label for='Email'>Email:</label>
+						<input class="form-item" type="email" placeholder="example@gmail.com"  name="email" required >
+					</div>
+					<div class='form-items'>
+						<label for="Address">Address:</label>
+						<input class="form-item" type="text" placeholder="Address"  name="address" required >
+					</div>
+					<div class='form-items'>
+						<label for="birthday">Birthday:</label>
+						<input class="form-item" type="Date" placeholder="00/00/0000"  name="birthday" required >
+					</div>
+					<div class='form-items'>
+						Gender:<br>
+						<input type="radio" id="male" name="gender" value="male">
+						<label for="male">Male</label><br>
+						<input type="radio" id="female" name="gender" value="female">
+						<label for="female">Female</label><br>
+						<input type="radio" id="other" name="gender" value="other">
+						<label for="other">Other</label><br>
+					</div>
+					<div class='form-items'>
+						<div>
+						Please select your age:<br>
+						  <input type="radio" id="age1" name="age" value="30">
+						  <label for="age1">0 - 30</label><br>
+						  <input type="radio" id="age2" name="age" value="60">
+						  <label for="age2">31 - 60</label> <br>
+						  <input type="radio" id="age3" name="age" value="100">
+						  <label for="age3">61 - 100</label><br>
+						 </div>
+
+					</div>
+					<div>
+						 
+						  <input type="submit" value="Submit">
+					</div>
+					
+						
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+</body>
+</html>
